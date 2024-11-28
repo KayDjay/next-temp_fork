@@ -76,9 +76,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
           <Text fontSize="sm" color="gray.500" className="">
             {date}
           </Text>
-          <Text noOfLines={3} overflow="hidden" textOverflow="ellipsis">
-            {description}
-          </Text>
+          <Text noOfLines={3}>{description}</Text>
           {socialLinks && (
             <HStack spacing={4} h="100%">
               {socialLinks.map(({ platform, url }) => {
@@ -264,7 +262,14 @@ const BlogPage = () => {
           gap={{ base: 6, md: 8 }}
         >
           {blogPosts.map((post, index) => (
-            <BlogCard key={index} {...post} />
+            <BlogCard
+              key={index}
+              title={post.title}
+              description={post.description}
+              imageUrl={post.imageUrl}
+              date={post.date}
+              socialLinks={post.socialLinks}
+            />
           ))}
         </SimpleGrid>
       </VStack>

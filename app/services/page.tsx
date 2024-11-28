@@ -1,8 +1,7 @@
+import ServicesGrid from "@/ui/Services";
+import { Metadata } from "next";
 
-import ServicesGrid from '@/ui/Services';
-import { Metadata } from 'next';
-
-export const servicesMetadata: Metadata = {
+export const metadata: Metadata = {
   title: "Our Services | CARCARE Mobile Carwash",
   description:
     "Comprehensive auto detailing services including interior vacuuming, ceramic coating, engine detailing, and more. Professional mobile car wash services with home service available.",
@@ -34,8 +33,8 @@ export const servicesMetadata: Metadata = {
 };
 export default function page() {
   return (
-    <div className='min-h-screen'>
+    <div className="min-h-screen">
       <ServicesGrid />
     </div>
-  )
+  );
 }

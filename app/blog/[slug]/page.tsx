@@ -1,6 +1,6 @@
 "use client";
 // pages/blog/[slug].tsx
-import { useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
 import {
   Box,
   Heading,
@@ -30,8 +30,7 @@ const dummyPosts = [
 ];
 
 const BlogPostPage = () => {
-  const router = useRouter();
-  const { slug } = router.query;
+  const { slug } = useParams();
   const post = dummyPosts.find((p) => p.slug === slug);
 
   if (!post) return <Spinner size="xl" />;

@@ -1,6 +1,6 @@
-import { Metadata } from "next";
+import { Metadata } from 'next';
 
-export const bookingMetadata: Metadata = {
+export const metadata: Metadata = {
   title: "Book Your Car Wash | CARCARE Mobile Carwash",
   description:
     "Schedule your professional car wash service online. Choose from our range of detailing packages with convenient home service options available in Eliozu.",

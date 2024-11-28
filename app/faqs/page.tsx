@@ -1,7 +1,7 @@
 import FAQPage from '@/ui/FAQPage';
 import { Metadata } from 'next';
 
-export const faqMetadata: Metadata = {
+export const metadata: Metadata = {
   title: "Frequently Asked Questions | CARCARE Mobile Carwash",
   description:
     "Find answers to common questions about our car wash services, booking process, pricing, and home service options. Learn more about our professional auto detailing services.",
